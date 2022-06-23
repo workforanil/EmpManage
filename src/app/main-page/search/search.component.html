@@ -1,0 +1,13 @@
+<div class="left-boxx">
+    <div class="search-box">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" name="" id="" placeholder="Search" [(ngModel)]="mainPageService.filteredString">
+    </div>
+</div>
+<div class="right-boxx">
+    <div class="pages">{{(i-1)*9 +1}}-{{i*9}} Of {{this.empAccountService.size}}</div>
+    <div class="page-nevigator">
+        <button class="btn btn-primary prev" (click)="onPrev()" [disabled]="i == 1"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+        <button class="next btn btn-primary" (click)="onNext()" [disabled]="i*9 >= this.empAccountService.size"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+    </div>
+</div>

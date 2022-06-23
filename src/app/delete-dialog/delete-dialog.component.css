@@ -1,0 +1,16 @@
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+    margin: 10px;
+}
+.btn-primary{
+    background-color: #308099;
+    border: none
+}
+.btn-light{
+    border: 1px solid #308099;
+    color: #308099;
+}

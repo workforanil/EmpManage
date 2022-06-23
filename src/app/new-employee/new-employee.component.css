@@ -1,0 +1,179 @@
+.newEmp{
+    width: 100vw;
+    height: 100vh;
+    /* border: 1px solid orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.center-content{
+    width: 95%;
+    height: 97%;
+    border: 2px solid #f0f0f0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newEmpTop{
+    /* border: 1px solid rgb(231, 231, 231);
+    display: flex;
+    width: 95%;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px; */
+    border: 1px solid rgb(231, 231, 231);
+    display: flex;
+    width: 95%;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 1.2%;
+    margin: 20px;
+    height: 8%;
+}
+.newEmpTop i{
+    font-size: 2rem;
+    margin: 0px 5px;
+    color: rgb(202, 202, 202);
+}
+.newEmpTop h2{
+    text-align: center;
+    margin: 0px;
+    color: #308099;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+.newEmpForm{
+    /* border: 2px solid blue; */
+    width: 95%;
+    height: 85%;
+    /* border: 1px solid rgb(165, 165, 165); */
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+}
+.newEmpForm-utility{
+    /* border: 2px solid orange; */
+    display: flex;
+    height: 12%;
+    align-items: center;
+    margin-left: 2.4%;
+}
+.box{
+    width: 50%;
+    display: block;
+    /* border: 2px solid black; */
+    height: 60%;
+}
+.input-utility{
+    width: 95%;
+    height: 70%;
+    margin: 1% 0%;
+    border: 0.13rem solid #e9e9e9;
+    border-radius: 5px;
+}
+.input-utility::placeholder{
+    font-size: .9rem;
+    padding: 5px;
+}
+.input-utility:focus{
+    outline: none;
+}
+.input-utility:focus::placeholder{
+    color: white;
+}
+select::content{
+    font-size: 0.9rem;
+}
+.role{
+    display: flex;
+    align-items: center;
+}
+.role-box{
+    width: 97.5%;
+    height: 60%;
+    display: block;
+}
+.role-utility{
+    width: 100%;
+    height: 70%;
+    margin: 1% 0%;
+    border: 0.13rem solid #e9e9e9;
+    border-radius: 5px;
+}
+.buttons{
+    height: 62.5%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: flex-end;
+    margin-left: 1.5%;
+}
+.btn-primary{
+    margin: 15px;
+    background-color: #308099;
+    border: 1px solid #308099;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    border-radius: 15px;
+    width: 150px;
+}
+.btn-light{
+    margin: 15px;
+    border: 1px solid #308099;
+    color: #308099;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    border-radius: 15px;
+    width: 150px;
+}
+label:after{
+    content: "*";
+    color: red;
+}
+.btn-primary:disabled, .btn-primary[disabled=disabled]{
+    background-color: #dfe2e9 !important;
+    color: #B1B1B1;
+}
+input.ng-invalid.ng-touched{
+    border-color: red;
+}
+select.ng-invalid.ng-touched{
+    border-color: red;
+}
+.phone select.ng-invalid.ng-touched{
+    border-color: red;
+}
+
+.phone input{
+    width: 88%;
+    height: 70%;
+    margin: 1% 0%;
+    border: 0.13rem solid #e9e9e9;
+    border-radius: 5px;
+}
+.phone select{
+    width: 7%;
+    height: 70%;
+    margin: 1% 0%;
+    border: 0.13rem solid #e9e9e9;
+    border-radius: 5px;
+}
+.phone .code{
+    height: 100%;
+}
+.phone select:focus{
+    outline: none;
+}
+.phone input:focus{
+    outline: none;
+}
+.phone input.ng-invalid.ng-touched{
+    border: 2px solid red;
+}
+option{
+    color: black;
+}

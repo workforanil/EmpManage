@@ -1,0 +1,28 @@
+<div class="table-section">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">FIRST NAME</th>
+            <th scope="col">LAST NAME</th>
+            <th scope="col">EMAIL</th>
+            <th scope="col">JOB ROLE</th>
+            <th scope="col">ACTION</th>
+          </tr>
+        </thead>
+        <tbody >
+          <ng-container *ngFor="let userDetail of userDetails | filter:mainPageService.filteredString:'firstName'; let j=index;">
+          <tr class="table-row" *ngIf="((this.mainPageService.i - 1)*9 )<=j && j<=((this.mainPageService.i)*9-1)">
+              <td scope="row"><a href="#" class="td-firstName" >{{userDetail.firstName}}</a></td>
+            <td>{{userDetail.lastName}}</td>
+            <td>{{userDetail.email}}</td>
+            <td>{{userDetail.jobRole}}</td>
+            <td>
+                <button class="btn action-button" (click)="openDialog(userDetail.id)"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                <button class="btn action-button" (click)="onEdit(userDetail.id)"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+            </td>
+          </tr>   
+          </ng-container>   
+        </tbody>
+      </table>
+</div>
+<!-- (i-1)*9 +1 > j && j > i*9 -->

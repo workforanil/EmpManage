@@ -1,0 +1,54 @@
+<div class="newEmp">
+    <div class="center-content">
+        <div class="newEmpTop">
+            <i class="fa fa-user-plus" aria-hidden="true"></i>
+            <h2>Add New Employee</h2>
+        </div>
+            <form action="" class="newEmpForm" [formGroup]="newUserForm" (ngSubmit)="onSubmit()" >
+                <div class="names newEmpForm-utility">
+                    <div class="firstName box">
+                        <label for="firstName box">First Name</label>
+                        <input type="text" name="firstName" id="" class="input-utility" placeholder="First Name" formControlName="firstName">
+                    </div>
+                    <div class="lastName box">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="" class="input-utility" placeholder="Last Name" formControlName="lastName">
+                    </div>
+                </div>
+                <div class="info newEmpForm-utility">
+                    <div class="email box">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="" class="input-utility" placeholder="Email" formControlName="email">
+                    </div>
+                    <div class="phone box">
+                            <label for="phone">Phone Number</label>
+                            <div class="code">
+                                <select name="code" id="code" formControlName="code">
+                                    <option value="+91">India (+91)</option>
+                                    <option value="+1"><span></span>0xF0 0x9F 0x87 0xA7, 0xF0 0x9F 0x87 0xA9(+1)</option>
+                                    <option value="+7"><span></span>Russia (+7)</option>
+                                </select>
+                                <input type="number" name="phone" id="" placeholder="Phone Number" formControlName="phoneNumber">
+                            </div>
+                    </div>
+                </div>
+                <div class="role newEmpForm-utility">
+                    <div class="role-box">
+                        <label for="role">Role</label>
+                    <select name="" id="" class="role-utility" formControlName="role" style="color: grey;">
+                        <option [ngValue]="null" disabled selected hidden>Role</option>
+                        <option value="Manager">Manager</option>
+                        <option value="Agent">Agent</option>
+                        <option value="Tech Support Agent">Tech Support Agent</option>
+                    </select>
+                    </div>
+
+                </div>
+                <div class="buttons">
+                    <button type="submit" class='btn btn-primary' [disabled]="!newUserForm.valid" (click)="onSubmit()">SAVE</button>
+                    <button type="button" class="btn btn-light" (click)="onCancel()">CANCEL</button>
+                </div>
+            </form>
+    </div>
+
+    </div>

@@ -1,0 +1,29 @@
+.left-boxx{
+    /* border: 2px solid purple; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.right-boxx{
+    /* border: 2px solid green; */
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+}
+.bttn{
+    height: 40px;
+    background-color: #308099;
+    border: none;
+}
+.left-boxx h2{
+    color: #308099;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-size: 2rem;
+}
+.left-boxx i{
+    color: rgb(136, 136, 136);
+}
